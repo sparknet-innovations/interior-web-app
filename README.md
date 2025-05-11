@@ -30,8 +30,7 @@ A modern and elegant web application for showcasing interior design projects. Bu
 
 - **Frontend**: HTML5, CSS3, Bootstrap 5
 - **Backend**: Python 3, Flask
-- **Templating**: Jinja2
-- **Deployment**: Flask local server / Can be hosted on Render/Heroku
+- **Deployment**: Flask local server 
 
 ---
 
