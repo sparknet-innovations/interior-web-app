@@ -64,34 +64,57 @@ interior-web-app/
 ---
 
 ## ⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 
-1. **Clone the repository**
+1. **Fork the repository**
+   - Go to the original repo: [sparknet-innovations/interior-web-app](https://github.com/sparknet-innovations/interior-web-app)
+   - Click **Fork** in the top-right to create your own copy.
+
+2. **Create a new branch**
 
    ```bash
-   git clone https://github.com/sparknet-innovations/interior-web-app.git
+   git checkout -b feature/update-readme
+   ```
+3. **Clone Fork Repository**
+
+   ```bash
+   git clone git@github.com:Prasadrasal2002/interior-web-app.git
    cd interior-web-app
    ```
+   image markdown
 
-2. **Create a virtual environment**
+4. **Configure SSH for GitHub**
+   ```bash
+   ssh-keygen -t rsa -b 4096 -C "rasalprasad2002@gmail.com"
+   ```
+
+   Copy the public key:
+   ```bash
+   cat ~/.ssh/id_rsa.pub
+   ```
+   Go to GitHub > Settings > SSH and GPG Keys > New SSH Key > Paste and save
+
+
+5. **Create a virtual environment**
 
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use venv\Scripts\activate
    ```
 
-3. **Install dependencies**
+6. **Install dependencies**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Run the Flask app**
+7. **Run the Flask app**
 
    ```bash
-   python app.py
+   python run.py
    ```
 
-5. **Open your browser**
+8. **Open your browser**
    Visit `http://127.0.0.1:5000` to see the app in action.
 
 ---
