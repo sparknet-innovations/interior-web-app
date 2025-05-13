@@ -84,7 +84,7 @@ interior-web-app/
    git clone git@github.com:Prasadrasal2002/interior-web-app.git
    cd interior-web-app
    ```
-   ![image](https://github.com/user-attachments/assets/1333b606-5368-4073-bd0c-5e55d250b130)
+   ![image](https://github.com/user-attachments/assets/98bed11a-9c27-46c7-817c-6d7b21e41ea6)
 
 5. **Configure SSH for GitHub**
    ```bash
