@@ -69,24 +69,28 @@ interior-web-app/
 1. **Fork the repository**
    - Go to the original repo: [sparknet-innovations/interior-web-app](https://github.com/sparknet-innovations/interior-web-app)
    - Click **Fork** in the top-right to create your own copy.
+   ![image](https://github.com/user-attachments/assets/70c239c5-d4ed-4444-aa2d-8cbd9aeab30b)
 
 2. **Create a new branch**
 
    ```bash
    git checkout -b feature/update-readme
    ```
-3. **Clone Fork Repository**
+   ![image](https://github.com/user-attachments/assets/f389b37d-f633-44c0-9e21-0bfc41f816d7)
+   
+4. **Clone Fork Repository**
 
    ```bash
    git clone git@github.com:Prasadrasal2002/interior-web-app.git
    cd interior-web-app
    ```
-   image markdown
+   ![image](https://github.com/user-attachments/assets/1333b606-5368-4073-bd0c-5e55d250b130)
 
-4. **Configure SSH for GitHub**
+5. **Configure SSH for GitHub**
    ```bash
    ssh-keygen -t rsa -b 4096 -C "rasalprasad2002@gmail.com"
    ```
+   ![image](https://github.com/user-attachments/assets/4cdbcb17-a3ed-4660-a8ea-b04379d0a114)
 
    Copy the public key:
    ```bash
@@ -94,28 +98,30 @@ interior-web-app/
    ```
    Go to GitHub > Settings > SSH and GPG Keys > New SSH Key > Paste and save
 
-
-5. **Create a virtual environment**
+6. **Create a virtual environment**
 
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use venv\Scripts\activate
    ```
-
-6. **Install dependencies**
+   
+7. **Install dependencies**
 
    ```bash
    pip install -r requirements.txt
    ```
+   ![image](https://github.com/user-attachments/assets/dec9dc72-81c0-486d-abca-652ef5f0e17b)
 
-7. **Run the Flask app**
+8. **Run the Flask app**
 
    ```bash
    python run.py
    ```
+   ![image](https://github.com/user-attachments/assets/cd87b30f-73cf-477c-bdb2-14ff7ed42ab0)
 
-8. **Open your browser**
+9. **Open your browser**
    Visit `http://127.0.0.1:5000` to see the app in action.
+   ![image](https://github.com/user-attachments/assets/04d02ad5-86dc-4fe2-b9e0-abf94d31ea44)
 
 ---
 
