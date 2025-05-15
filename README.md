@@ -124,7 +124,7 @@ interior-web-app/
    Visit `http://127.0.0.1:5000` to see the app in action.
    ![image](https://github.com/user-attachments/assets/04d02ad5-86dc-4fe2-b9e0-abf94d31ea44)
 
-11. Install required tools:
+11. **Install required tools:**
     
     a) Python 3.x:
        Download: https://www.python.org/downloads/
@@ -134,6 +134,8 @@ interior-web-app/
        ```bash
        python --version
        ```
+       ![image](https://github.com/user-attachments/assets/a6026d5e-5bf0-400d-855e-ec3e6b4df7cf)
+
 
     b) Flask:
        Installed using a virtual environment:
@@ -154,6 +156,8 @@ interior-web-app/
        ```bash
        docker --version
        ```
+       ![image](https://github.com/user-attachments/assets/bd040939-4e02-466e-8c83-8b77b83c8561)
+
 
     d) Git:
        Download: https://git-scm.com/
@@ -163,6 +167,8 @@ interior-web-app/
        ```bash
        git --version
        ```
+       ![image](https://github.com/user-attachments/assets/7f31563a-169a-42e9-a9c3-72e081c36521)
+
 
     e) AWS CLI:
        Download: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
@@ -172,6 +178,8 @@ interior-web-app/
        ```bash
        aws --version
        ```
+       ![image](https://github.com/user-attachments/assets/6a8c4d20-760b-4b30-9014-9a10252b7514)
+
 
     e) Terraform:
 
@@ -184,6 +192,9 @@ interior-web-app/
        ```bash
        terraform -v
        ```
+       ![image](https://github.com/user-attachments/assets/433c5947-b08f-4fb4-902a-d7ea0016ca22)
+
+
 ---
 
 ## 🤝 Contributing
