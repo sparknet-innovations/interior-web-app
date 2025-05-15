@@ -124,6 +124,66 @@ interior-web-app/
    Visit `http://127.0.0.1:5000` to see the app in action.
    ![image](https://github.com/user-attachments/assets/04d02ad5-86dc-4fe2-b9e0-abf94d31ea44)
 
+11. Install required tools:
+    
+    a) Python 3.x:
+       Download: https://www.python.org/downloads/
+
+       Verify:
+
+       ```bash
+       python --version
+       ```
+
+    b) Flask:
+       Installed using a virtual environment:
+
+       ```bash
+       python -m venv venv
+       venv\Scripts\activate  # activate on Windows
+       pip install -r requirements.txt
+       ```
+
+    c) Docker:
+       Download: https://www.docker.com/products/docker-desktop/
+       >> Windows 10/11 with WSL 2 enabled
+       >> Enable Docker after installation and sign in with DockerHub.
+
+       Verify:
+
+       ```bash
+       docker --version
+       ```
+
+    d) Git:
+       Download: https://git-scm.com/
+       
+       Verify:
+
+       ```bash
+       git --version
+       ```
+
+    e) AWS CLI:
+       Download: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
+       
+       Verify:
+
+       ```bash
+       aws --version
+       ```
+
+    e) Terraform:
+
+       ```bash
+       choco install terraform -y
+       choco upgrade terraform -y
+       ```
+       Verify:
+
+       ```bash
+       terraform -v
+       ```
 ---
 
 ## 🤝 Contributing
