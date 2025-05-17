@@ -5,3 +5,15 @@ venv/
 __pycache__/
 *.pyc
 
+# Ignore Terraform state files
+*.tfstate
+
+# Ignore Terraform core directories
+.terraform/
+
+# Ignore any variable override files
+*.tfvars
+
+# Ignore plan files
+*.tfplan
+
