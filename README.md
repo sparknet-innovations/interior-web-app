@@ -64,11 +64,9 @@ interior-web-app/
 
 ---
 
-## ⚙️ Setup Instructions
-## ⚙️ Setup Instructions
+1. ## ⚙️ Setup Instructions
 
-1. **Fork the repository**
-2. 
+2. **Fork the repository** 
    - Go to the original repo: [sparknet-innovations/interior-web-app](https://github.com/sparknet-innovations/interior-web-app)
    - Click **Fork** in the top-right to create your own copy.
   
@@ -105,6 +103,7 @@ interior-web-app/
    
 
    Copy the public key:
+   
    ```bash
    cat ~/.ssh/id_rsa.pub
    ```
@@ -142,90 +141,94 @@ interior-web-app/
 11. **Open your browser**
     
    Visit `http://127.0.0.1:5000` to see the app in action.
+   
 
    ![image](https://github.com/user-attachments/assets/04d02ad5-86dc-4fe2-b9e0-abf94d31ea44)
 
 
 
 14. **Install required tools:**
-    
-    a) **Python 3.x:**
-    
-       **Download:** https://www.python.org/downloads/
 
-       **Verify:**
 
-       ```bash
-       python --version
+a) **Python 3.x:**
+    
+**Download:** https://www.python.org/downloads/
+
+**Verify:**
+
+```bash
+python --version
+```
+       
+
+![image](https://github.com/user-attachments/assets/a6026d5e-5bf0-400d-855e-ec3e6b4df7cf)
+
+
+b) **Flask:**
+    
+Installed using a virtual environment:
+
+```bash
+python -m venv venv
+venv\Scripts\activate  # activate on Windows
+pip install -r requirements.txt
+```
+
+c) **Docker:**
+    
+**Download:** https://www.docker.com/products/docker-desktop/
+>> Windows 10/11 with WSL 2 enabled
+>> Enable Docker after installation and sign in with DockerHub.
+
+**Verify:**
+
+
+```bash
+docker --version
        ```
        
-       ![image](https://github.com/user-attachments/assets/a6026d5e-5bf0-400d-855e-ec3e6b4df7cf)
+![image](https://github.com/user-attachments/assets/bd040939-4e02-466e-8c83-8b77b83c8561)
+
+d) **Git:**
+
+**Download:** https://git-scm.com/
+       
+**Verify:**
+
+```bash
+git --version
+```
+       
+![image](https://github.com/user-attachments/assets/7f31563a-169a-42e9-a9c3-72e081c36521)
 
 
-    b) **Flask:**
+e) **AWS CLI:**
     
-       Installed using a virtual environment:
-
-       ```bash
-       python -m venv venv
-       venv\Scripts\activate  # activate on Windows
-       pip install -r requirements.txt
-       ```
-
-    c) **Docker:**
-    
-     **Download:** https://www.docker.com/products/docker-desktop/
-       >> Windows 10/11 with WSL 2 enabled
-       >> Enable Docker after installation and sign in with DockerHub.
-
-       **Verify:**
-
-       ```bash
-       docker --version
-       ```
+**Download:** https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
        
-       ![image](https://github.com/user-attachments/assets/bd040939-4e02-466e-8c83-8b77b83c8561)
+**Verify:**
 
-
-    d) **Git:**
-    
-       **Download:** https://git-scm.com/
+```bash
+aws --version
+```
        
-       **Verify:**
-
-       ```bash
-       git --version
-       ```
-       
-       ![image](https://github.com/user-attachments/assets/7f31563a-169a-42e9-a9c3-72e081c36521)
+![image](https://github.com/user-attachments/assets/6a8c4d20-760b-4b30-9014-9a10252b7514)
 
 
-    e) **AWS CLI:**
-    
-       Download: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
-       
-       **Verify:**
+e) **Terraform:**
 
-       ```bash
-       aws --version
-       ```
-       
-       ![image](https://github.com/user-attachments/assets/6a8c4d20-760b-4b30-9014-9a10252b7514)
+```bash
+choco install terraform -y
+choco upgrade terraform -y
+```
 
+**Verify:**
 
-    e) **Terraform:**
+```bash
+terraform -v
+```
 
-       ```bash
-       choco install terraform -y
-       choco upgrade terraform -y
-       ```
-       **Verify:**
-
-       ```bash
-       terraform -v
-       ```
-
-       ![image](https://github.com/user-attachments/assets/7a9ccd85-147b-4793-9ef9-6994d0911ac0)
+![image](https://github.com/user-attachments/assets/7a9ccd85-147b-4793-9ef9-6994d0911ac0)
 
 
 
@@ -233,13 +236,13 @@ interior-web-app/
       
 13.  **Created a dedicated feature branch for infrastructure setup :**
        
-       ```bash
-       git checkout -b feature/terraform-setup
-       ```
+```bash
+git checkout -b feature/terraform-setup
+```
 
 **create Terraform files :**
        
-       ```bash
+```bash
 terraform/
 │   backend.tf              
 │   main.tf                               
@@ -266,168 +269,172 @@ terraform/
         ├── vpc.tf           
         ├── outputs.tf
         └── variables.tf    
+```
 
-       ```
 
-       i) Initialize Terraform
+i) **Initialize Terraform**
 
-       ```bash
-       cd terraform
+
+```bash
+cd terraform
        
-       terraform init
-       ```
+terraform init
+```
 
-       ![image](https://github.com/user-attachments/assets/9d4012ff-d432-456a-a911-6b98157bb7c2)
-
-
-       ii) View the Execution Plan
-
-       ```bash
-       terraform plan
-       ``
-
-       ![image](https://github.com/user-attachments/assets/775e9dbd-273c-4f23-9f1a-f7a2fdcfc67b)
-       ![image](https://github.com/user-attachments/assets/4036cccf-7613-421d-9335-ed126bac22e3)
+![image](https://github.com/user-attachments/assets/9d4012ff-d432-456a-a911-6b98157bb7c2)
 
 
-       iii) Apply the Configuration
+ii) **View the Execution Plan**
+
+```bash
+terraform plan
+```
+
+![image](https://github.com/user-attachments/assets/775e9dbd-273c-4f23-9f1a-f7a2fdcfc67b)
+
+![image](https://github.com/user-attachments/assets/4036cccf-7613-421d-9335-ed126bac22e3)
+
+
+iii) **Apply the Configuration**
         
-       ```bash
-       terraform apply
-       ```
+```bash
+terraform apply
+```
 
-       ![image](https://github.com/user-attachments/assets/fe870f9f-85fd-42ce-b446-660db2a0ca3d)
+![image](https://github.com/user-attachments/assets/fe870f9f-85fd-42ce-b446-660db2a0ca3d)
 
-       iv) Destroy Infra:
+iv) **Destroy Infra:**
 
-       ```bash
-       terraform destroy
-       ```
+```bash
+terraform destroy
+```
 
-       ![image](https://github.com/user-attachments/assets/6ae62c5c-9caf-40af-a443-df2fac074ba4)
+![image](https://github.com/user-attachments/assets/6ae62c5c-9caf-40af-a443-df2fac074ba4)
        
 
-       ![image](https://github.com/user-attachments/assets/297e354b-d564-422e-843a-0d9e75378dd4)
+![image](https://github.com/user-attachments/assets/297e354b-d564-422e-843a-0d9e75378dd4)
 
 
 ## Dockerization of the Flask Application
 
 14. **Created a dedicated feature branch for Dockerization of the Flask application.**
       
-       ```bash
-       git checkout -b feature/docker-setup
-       ```
+```bash
+git checkout -b feature/docker-setup
+```
 
 15. **create .gitignore file**
     
-      (This tells Git what to ignore so these files aren't pushed to the repository:)
+(This tells Git what to ignore so these files aren't pushed to the repository:)
 
-    ![image](https://github.com/user-attachments/assets/a1e5907f-170f-4fb4-b00b-c31c302bb02f)
+![image](https://github.com/user-attachments/assets/a1e5907f-170f-4fb4-b00b-c31c302bb02f)
 
 
 17. **Create  .dockerignore file**
     
-      (This prevents unnecessary files from being copied into your Docker image)
+(This prevents unnecessary files from being copied into your Docker image)
 
-    ![image](https://github.com/user-attachments/assets/3a119c8e-0696-4cb7-b5d5-a132276ba622)
+![image](https://github.com/user-attachments/assets/3a119c8e-0696-4cb7-b5d5-a132276ba622)
 
 
 19. **Create a Dockerfile and requirements.txt files**
-      (For Containerization)
+(For Containerization)
       
-      ```bash
-      vim Dockerfile
-      ```
+```bash
+vim Dockerfile
+```
 
-      ```bash
-      vim requirements.txt
-      ```
+```bash
+vim requirements.txt
+```
 
 
 
- ### Docker Setup
+### Docker Setup
 
 20. Open Docker Desktop from the Start menu and wait until it's fully initialized**
 
 21. **Build the Docker image:**
       
-      ```bash
-      docker build -t interior-web-app:latest .
-      ```
+```bash
+docker build -t interior-web-app:latest .
+```
       
 
-      ![image](https://github.com/user-attachments/assets/ce1ca7d3-3da7-4e92-86a1-eae056aa23d8)
+![image](https://github.com/user-attachments/assets/ce1ca7d3-3da7-4e92-86a1-eae056aa23d8)
 
     
 
-      **List Docker Images:**
+22. **List Docker Images:**
 
-      ```bash
-      docker images
-      ```
+```bash
+docker images
+```
 
 
-      ![image](https://github.com/user-attachments/assets/4dc6f469-7e14-4b14-ab32-c00cbd99e6c3)
+![image](https://github.com/user-attachments/assets/4dc6f469-7e14-4b14-ab32-c00cbd99e6c3)
 
 
 
 23. **Run the container:**
       
-      ```bash
-      docker run -itd -p 5000:5000 interior-web-app:latest
-      ```
+```bash
+docker run -itd -p 5000:5000 interior-web-app:latest
+```
 
 
-      ![image](https://github.com/user-attachments/assets/96fff6d3-d182-400e-996b-ac3b03bfef27)
+![image](https://github.com/user-attachments/assets/96fff6d3-d182-400e-996b-ac3b03bfef27)
 
 
-      **Verify Running Containers:**
+**Verify Running Containers:**
 
-      ```bash
-      docker ps
-      ```
+```bash
+docker ps
+```
 
 
-      ![image](https://github.com/user-attachments/assets/3aff6893-d57c-4f59-9d11-3020c75617c5)
+![image](https://github.com/user-attachments/assets/3aff6893-d57c-4f59-9d11-3020c75617c5)
     
 
 
 23. **Docker Login:**
 
 
-      ![image](https://github.com/user-attachments/assets/4d4df858-8fb8-4bd2-926d-db706e609957)
+![image](https://github.com/user-attachments/assets/4d4df858-8fb8-4bd2-926d-db706e609957)
 
 
 
 24. **Push to DockerHub:**
 
-      ```bash
-      docker tag interior-web-app:latest devopscode44/interior-web-app:v1
-      docker push devopscode44/flask-app:v1
-      ```
+```bash
+docker tag interior-web-app:latest devopscode44/interior-web-app:v1
+docker push devopscode44/flask-app:v1
+```
 
 
-      ![image](https://github.com/user-attachments/assets/d0f3ea3a-f53b-404c-9c22-05799713e395)
+![image](https://github.com/user-attachments/assets/d0f3ea3a-f53b-404c-9c22-05799713e395)
 
 
 
 25. **DockerHub Dashboard:**
 
 
-    ![image](https://github.com/user-attachments/assets/790610e7-6c85-48d8-953d-96508a3d62a5)
+![image](https://github.com/user-attachments/assets/790610e7-6c85-48d8-953d-96508a3d62a5)
 
     
 
 24. **Stop and Remove the Container**
       
-      ```bash
-      docker stop Container-ID
+```bash
+docker stop Container-ID
       
-      docker rm Container-ID
-      ```
+docker rm Container-ID
+```
 
 
-      ![image](https://github.com/user-attachments/assets/8b51e210-1f8f-4815-ac93-b2e823457a3c)
+![image](https://github.com/user-attachments/assets/8b51e210-1f8f-4815-ac93-b2e823457a3c)
+
+
 
 ---
 
