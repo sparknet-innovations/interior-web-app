@@ -224,7 +224,10 @@ interior-web-app/
        ```bash
        terraform -v
        ```
-<<<<<<< HEAD
+
+       ![image](https://github.com/user-attachments/assets/7a9ccd85-147b-4793-9ef9-6994d0911ac0)
+
+
 
 ## Terraform Infrastructure Setup
       
@@ -233,8 +236,8 @@ interior-web-app/
        ```bash
        git checkout -b feature/terraform-setup
        ```
-       
-       create Terraform files :
+
+**create Terraform files :**
        
        ```bash
 terraform/
@@ -266,18 +269,26 @@ terraform/
 
        ```
 
-       **i)** Initialize Terraform
+       i) Initialize Terraform
 
        ```bash
        cd terraform
+       
        terraform init
        ```
 
-       **ii)** View the Execution Plan
+       ![image](https://github.com/user-attachments/assets/9d4012ff-d432-456a-a911-6b98157bb7c2)
+
+
+       ii) View the Execution Plan
 
        ```bash
        terraform plan
        ``
+
+       ![image](https://github.com/user-attachments/assets/775e9dbd-273c-4f23-9f1a-f7a2fdcfc67b)
+       ![image](https://github.com/user-attachments/assets/4036cccf-7613-421d-9335-ed126bac22e3)
+
 
        iii) Apply the Configuration
         
@@ -285,21 +296,43 @@ terraform/
        terraform apply
        ```
 
+       ![image](https://github.com/user-attachments/assets/fe870f9f-85fd-42ce-b446-660db2a0ca3d)
+
+       iv) Destroy Infra:
+
+       ```bash
+       terraform destroy
+       ```
+
+       ![image](https://github.com/user-attachments/assets/6ae62c5c-9caf-40af-a443-df2fac074ba4)
+       
+
+       ![image](https://github.com/user-attachments/assets/297e354b-d564-422e-843a-0d9e75378dd4)
+
+
 ## Dockerization of the Flask Application
 
 14. **Created a dedicated feature branch for Dockerization of the Flask application.**
       
        ```bash
-       git checkout -b feature/terraform-setup
+       git checkout -b feature/docker-setup
        ```
 
 15. **create .gitignore file**
+    
       (This tells Git what to ignore so these files aren't pushed to the repository:)
 
-16. **Create  .dockerignore file**
+    ![image](https://github.com/user-attachments/assets/a1e5907f-170f-4fb4-b00b-c31c302bb02f)
+
+
+17. **Create  .dockerignore file**
+    
       (This prevents unnecessary files from being copied into your Docker image)
 
-17. **Create a Dockerfile and requirements.txt files**
+    ![image](https://github.com/user-attachments/assets/3a119c8e-0696-4cb7-b5d5-a132276ba622)
+
+
+19. **Create a Dockerfile and requirements.txt files**
       (For Containerization)
       
       ```bash
@@ -310,15 +343,23 @@ terraform/
       vim requirements.txt
       ```
 
-18. **Open Docker Desktop from the Start menu and wait until it's fully initialized**
 
-### Docker Setup
 
-20. **Build the Docker image:**
+ ### Docker Setup
+
+20. Open Docker Desktop from the Start menu and wait until it's fully initialized**
+
+21. **Build the Docker image:**
       
       ```bash
       docker build -t interior-web-app:latest .
       ```
+      
+
+      ![image](https://github.com/user-attachments/assets/ce1ca7d3-3da7-4e92-86a1-eae056aa23d8)
+
+    
+
       **List Docker Images:**
 
       ```bash
@@ -326,11 +367,19 @@ terraform/
       ```
 
 
-21. **Run the container:**
+      ![image](https://github.com/user-attachments/assets/4dc6f469-7e14-4b14-ab32-c00cbd99e6c3)
+
+
+
+23. **Run the container:**
       
       ```bash
       docker run -itd -p 5000:5000 interior-web-app:latest
       ```
+
+
+      ![image](https://github.com/user-attachments/assets/96fff6d3-d182-400e-996b-ac3b03bfef27)
+
 
       **Verify Running Containers:**
 
@@ -338,20 +387,47 @@ terraform/
       docker ps
       ```
 
-22. **Push to DockerHub:**
+
+      ![image](https://github.com/user-attachments/assets/3aff6893-d57c-4f59-9d11-3020c75617c5)
+    
+
+
+23. **Docker Login:**
+
+
+      ![image](https://github.com/user-attachments/assets/4d4df858-8fb8-4bd2-926d-db706e609957)
+
+
+
+24. **Push to DockerHub:**
 
       ```bash
       docker tag interior-web-app:latest devopscode44/interior-web-app:v1
       docker push devopscode44/flask-app:v1
       ```
 
-23. **Stop and Remove the Container**
+
+      ![image](https://github.com/user-attachments/assets/d0f3ea3a-f53b-404c-9c22-05799713e395)
+
+
+
+25. **DockerHub Dashboard:**
+
+
+    ![image](https://github.com/user-attachments/assets/790610e7-6c85-48d8-953d-96508a3d62a5)
+
+    
+
+24. **Stop and Remove the Container**
       
       ```bash
       docker stop Container-ID
       
       docker rm Container-ID
       ```
+
+
+      ![image](https://github.com/user-attachments/assets/8b51e210-1f8f-4815-ac93-b2e823457a3c)
 
 ---
 
