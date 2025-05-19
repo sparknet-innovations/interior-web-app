@@ -184,6 +184,136 @@ interior-web-app/
        ```bash
        terraform -v
        ```
+
+## Terraform Infrastructure Setup
+      
+13.  **Created a dedicated feature branch for infrastructure setup :**
+       
+       ```bash
+       git checkout -b feature/terraform-setup
+       ```
+       
+       create Terraform files :
+       
+       ```bash
+terraform/
+│   backend.tf              
+│   main.tf                               
+│   provider.tf             
+│   terraform.tfvars    
+│   variables.tf            
+
+└───modules/
+    ├───ec2/
+    │   ├── ec2.tf           
+    │   ├── outputs.tf       
+    │   └── variables.tf     
+    │
+    ├───iam/
+    │   ├── iam.tf           
+    │   └── outputs.tf       
+    │
+    ├───sg/
+    │   ├── security.tf      
+    │   ├── outputs.tf       
+    │   └── variables.tf     
+    │
+    └───vpc/
+        ├── vpc.tf           
+        ├── outputs.tf
+        └── variables.tf    
+
+       ```
+
+       **i)** Initialize Terraform
+
+       ```bash
+       cd terraform
+       terraform init
+       ```
+
+       **ii)** View the Execution Plan
+
+       ```bash
+       terraform plan
+       ``
+
+       iii) Apply the Configuration
+        
+       ```bash
+       terraform apply
+       ```
+
+## Dockerization of the Flask Application
+
+14. **Created a dedicated feature branch for Dockerization of the Flask application.**
+      
+       ```bash
+       git checkout -b feature/terraform-setup
+       ```
+
+15. **create .gitignore file**
+      (This tells Git what to ignore so these files aren't pushed to the repository:)
+
+16. **Create  .dockerignore file**
+      (This prevents unnecessary files from being copied into your Docker image)
+
+17. **Create a Dockerfile and requirements.txt files**
+      (For Containerization)
+      
+      ```bash
+      vim Dockerfile
+      ```
+
+      ```bash
+      vim requirements.txt
+      ```
+
+18. **Open Docker Desktop from the Start menu and wait until it's fully initialized**
+
+### Docker Setup
+
+20. **Build the Docker image:**
+      
+      ```bash
+      docker build -t interior-web-app:latest .
+      ```
+      **List Docker Images:**
+
+      ```bash
+      docker images
+      ```
+
+
+21. **Run the container:**
+      
+      ```bash
+      docker run -itd -p 5000:5000 interior-web-app:latest
+      ```
+
+      **Verify Running Containers:**
+
+      ```bash
+      docker ps
+      ```
+
+22. **Push to DockerHub:**
+
+      ```bash
+      docker tag interior-web-app:latest devopscode44/interior-web-app:v1
+      docker push devopscode44/flask-app:v1
+      ```
+
+23. **Stop and Remove the Container**
+      
+      ```bash
+      docker stop Container-ID
+      
+      docker rm Container-ID
+      ```
+      
+
+feature/docker-setup
 ---
 
 ## 🤝 Contributing
