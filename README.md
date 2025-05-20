@@ -185,13 +185,16 @@ c) **Docker:**
 
 ```bash
 docker --version
-       ```
+```
        
-![image](https://github.com/user-attachments/assets/bd040939-4e02-466e-8c83-8b77b83c8561)
+![image](https://github.com/user-attachments/assets/b302487b-2a26-4b34-abdf-72f65bb6994d)
+
+
 
 d) **Git:**
 
 **Download:** https://git-scm.com/
+
        
 **Verify:**
 
@@ -200,6 +203,7 @@ git --version
 ```
        
 ![image](https://github.com/user-attachments/assets/7f31563a-169a-42e9-a9c3-72e081c36521)
+
 
 
 e) **AWS CLI:**
