@@ -303,6 +303,44 @@ terraform apply
 
 ![image](https://github.com/user-attachments/assets/fe870f9f-85fd-42ce-b446-660db2a0ca3d)
 
+## Terraform Output
+
+**VPC:**
+
+![image](https://github.com/user-attachments/assets/84fb19e9-b18c-4140-94b5-30e831a42a91)
+
+
+**Instances:**
+
+
+![image](https://github.com/user-attachments/assets/df7300ef-cdf1-4c7c-9400-0d0b6a4ff40c)
+
+
+
+**Subnets:**
+
+![image](https://github.com/user-attachments/assets/7ab72e0a-4c3e-4cba-a3d3-3ba845c6732d)
+
+
+**Internet-Gateway:**
+
+![image](https://github.com/user-attachments/assets/48e07032-b92a-486c-943a-12f6de814cff)
+
+
+
+**Route Table:**
+
+![image](https://github.com/user-attachments/assets/fe731f3b-dfb0-4082-9480-84d4ce31ea78)
+
+
+
+**Security Group:**
+
+![image](https://github.com/user-attachments/assets/fac0919d-cb5c-446f-95b0-a5ff54624fd2)
+
+
+
+
 iv) **Destroy Infra:**
 
 ```bash
