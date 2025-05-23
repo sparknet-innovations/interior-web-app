@@ -487,17 +487,24 @@ docker rm Container-ID
 git checkout -b feature/k8s-deployment
 ```
 
-26. **Kubernetes Manifests (in /k8s folder)
+26. **Kubernetes Manifests (in /k8s folder)**
     
     deployment.yml: Defines the Flask app deployment
 
     service.yml: Exposes the app internally or externally
 
+    configmap.yml: manage dynamic environment variables
 
-27. **Deploying to Kubernetes
 
 
-1) **Apply deployment:
+    ![image](https://github.com/user-attachments/assets/2ccf58eb-0c0e-42b2-bcf0-688dd3f24059)
+
+
+
+28. **Deploying to Kubernetes**
+
+
+1) **Apply deployment:**
 
 
 ```bash
@@ -505,31 +512,56 @@ cd k8s
 kubectl apply -f deployment.yml
 ```
 
-2) **Apply service:
+2) **Apply service:**
 
 ```bash
 kubectl apply -f /service.yaml
 ```
 
-3) **Apply configmap
+3) **Apply configmap**
 
 ```bash
 kubectl apply -f configmap.yml
 ```
 
 
-4) **Verify pods and service:
+4) **Verify pods and service:**
 
 ```bash
-kubectl get pods
+kubectl get deployment
+```
+
+
+![image](https://github.com/user-attachments/assets/41268d85-a168-41da-be5a-c339d19d919c)
+
+
+```bash
 kubectl get svc
 ```
 
-5) **Accessing the Flask App
+
+![image](https://github.com/user-attachments/assets/4fc928f0-cef7-471c-8a1e-9370b16f9551)
+
+
+
+```bash
+kubectl get configmap
+```
+
+
+![image](https://github.com/user-attachments/assets/5554be24-2b49-4197-a2dc-13be2084ef55)
+
+
+
+5) **Accessing the Flask App**
 
 ```bash
 minikube service flask-service
 ```
+
+
+![image](https://github.com/user-attachments/assets/95616fa7-07b3-43c1-874e-23ba176bea45)
+
 
 
 ---
