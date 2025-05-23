@@ -67,72 +67,69 @@ interior-web-app/
 1. ## ⚙️ Setup Instructions
 
 2. **Fork the repository** 
-   - Go to the original repo: [sparknet-innovations/interior-web-app](https://github.com/sparknet-innovations/interior-web-app)
-   - Click **Fork** in the top-right to create your own copy.
+- Go to the original repo: [sparknet-innovations/interior-web-app](https://github.com/sparknet-innovations/interior-web-app)
+- Click **Fork** in the top-right to create your own copy.
   
-
-   ![image](https://github.com/user-attachments/assets/98bed11a-9c27-46c7-817c-6d7b21e41ea6)
-
-   
 
 
 4. **Create a new branch**
 
-   ```bash
-   git checkout -b feature/update-readme
-   ```
+```bash
+git checkout -b feature/update-readme
+```
    
-   ![image](https://github.com/user-attachments/assets/f389b37d-f633-44c0-9e21-0bfc41f816d7)
+![image](https://github.com/user-attachments/assets/f389b37d-f633-44c0-9e21-0bfc41f816d7)
 
    
    
    
 6. **Clone Fork Repository**
 
-   ```bash
-   git clone git@github.com:Prasadrasal2002/interior-web-app.git
-   cd interior-web-app
-   ```
+```bash
+git clone git@github.com:Prasadrasal2002/interior-web-app.git
+cd interior-web-app
+```
    
-   ![image](https://github.com/user-attachments/assets/8e365c7e-6d5c-4929-980e-6cbf3984fc24)
+![image](https://github.com/user-attachments/assets/8e365c7e-6d5c-4929-980e-6cbf3984fc24)
 
    
 
 
 8. **Configure SSH for GitHub**
    
-   ```bash
-   ssh-keygen -t rsa -b 4096 -C "rasalprasad2002@gmail.com"
-   ```
+```bash
+ssh-keygen -t rsa -b 4096 -C "rasalprasad2002@gmail.com"
+```
    
-   ![image](https://github.com/user-attachments/assets/4cdbcb17-a3ed-4660-a8ea-b04379d0a114)
+![image](https://github.com/user-attachments/assets/4cdbcb17-a3ed-4660-a8ea-b04379d0a114)
 
    
    
 
-   Copy the public key:
+Copy the public key:
    
-   ```bash
-   cat ~/.ssh/id_rsa.pub
-   ```
-   Go to GitHub > Settings > SSH and GPG Keys > New SSH Key > Paste and save
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+Go to GitHub > Settings > SSH and GPG Keys > New SSH Key > Paste and save
    
 
 10. **Create a virtual environment**
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use venv\Scripts\activate
-   ```
+   
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use venv\Scripts\activate
+```
    
    
 11. **Install dependencies**
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
    
-   ![image](https://github.com/user-attachments/assets/dec9dc72-81c0-486d-abca-652ef5f0e17b)
+![image](https://github.com/user-attachments/assets/dec9dc72-81c0-486d-abca-652ef5f0e17b)
 
    
 
@@ -140,11 +137,11 @@ interior-web-app/
 
 11. **Run the Flask app**
 
-   ```bash
-   python run.py
-   ```
+```bash
+python run.py
+```
 
-   ![image](https://github.com/user-attachments/assets/cd87b30f-73cf-477c-bdb2-14ff7ed42ab0)
+![image](https://github.com/user-attachments/assets/cd87b30f-73cf-477c-bdb2-14ff7ed42ab0)
 
 
 
@@ -152,10 +149,10 @@ interior-web-app/
 
 11. **Open your browser**
     
-   Visit `http://127.0.0.1:5000` to see the app in action.
+Visit `http://127.0.0.1:5000` to see the app in action.
    
 
-   ![image](https://github.com/user-attachments/assets/04d02ad5-86dc-4fe2-b9e0-abf94d31ea44)
+![image](https://github.com/user-attachments/assets/04d02ad5-86dc-4fe2-b9e0-abf94d31ea44)
 
    
 
