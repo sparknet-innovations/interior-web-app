@@ -478,6 +478,60 @@ docker rm Container-ID
 
 
 
+
+## Kubernetes Deployment
+
+25. **Created a dedicated feature branch for Deployment of the Flask application.**
+
+```bash
+git checkout -b feature/k8s-deployment
+```
+
+26. **Kubernetes Manifests (in /k8s folder)
+    
+    deployment.yml: Defines the Flask app deployment
+
+    service.yml: Exposes the app internally or externally
+
+
+27. **Deploying to Kubernetes
+
+
+1) **Apply deployment:
+
+
+```bash
+cd k8s
+kubectl apply -f deployment.yml
+```
+
+2) **Apply service:
+
+```bash
+kubectl apply -f /service.yaml
+```
+
+3) **Apply configmap
+
+```bash
+kubectl apply -f configmap.yml
+```
+
+
+4) **Verify pods and service:
+
+```bash
+kubectl get pods
+kubectl get svc
+```
+
+5) **Accessing the Flask App
+
+```bash
+minikube service flask-service
+```
+
+
 ---
 
 ## 🤝 Contributing
