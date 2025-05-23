@@ -73,17 +73,21 @@ interior-web-app/
 
    ![image](https://github.com/user-attachments/assets/98bed11a-9c27-46c7-817c-6d7b21e41ea6)
 
+   
 
-3. **Create a new branch**
+
+4. **Create a new branch**
 
    ```bash
    git checkout -b feature/update-readme
    ```
    
    ![image](https://github.com/user-attachments/assets/f389b37d-f633-44c0-9e21-0bfc41f816d7)
+
    
    
-4. **Clone Fork Repository**
+   
+6. **Clone Fork Repository**
 
    ```bash
    git clone git@github.com:Prasadrasal2002/interior-web-app.git
@@ -92,14 +96,18 @@ interior-web-app/
    
    ![image](https://github.com/user-attachments/assets/8e365c7e-6d5c-4929-980e-6cbf3984fc24)
 
+   
 
-6. **Configure SSH for GitHub**
+
+8. **Configure SSH for GitHub**
    
    ```bash
    ssh-keygen -t rsa -b 4096 -C "rasalprasad2002@gmail.com"
    ```
    
    ![image](https://github.com/user-attachments/assets/4cdbcb17-a3ed-4660-a8ea-b04379d0a114)
+
+   
    
 
    Copy the public key:
@@ -110,7 +118,7 @@ interior-web-app/
    Go to GitHub > Settings > SSH and GPG Keys > New SSH Key > Paste and save
    
 
-8. **Create a virtual environment**
+10. **Create a virtual environment**
 
    ```bash
    python -m venv venv
@@ -118,13 +126,15 @@ interior-web-app/
    ```
    
    
-9. **Install dependencies**
+11. **Install dependencies**
 
    ```bash
    pip install -r requirements.txt
    ```
    
    ![image](https://github.com/user-attachments/assets/dec9dc72-81c0-486d-abca-652ef5f0e17b)
+
+   
 
    
 
@@ -136,6 +146,8 @@ interior-web-app/
 
    ![image](https://github.com/user-attachments/assets/cd87b30f-73cf-477c-bdb2-14ff7ed42ab0)
 
+
+
    
 
 11. **Open your browser**
@@ -144,6 +156,8 @@ interior-web-app/
    
 
    ![image](https://github.com/user-attachments/assets/04d02ad5-86dc-4fe2-b9e0-abf94d31ea44)
+
+   
 
 
 
@@ -162,6 +176,8 @@ python --version
        
 
 ![image](https://github.com/user-attachments/assets/a6026d5e-5bf0-400d-855e-ec3e6b4df7cf)
+
+
 
 
 b) **Flask:**
@@ -191,6 +207,8 @@ docker --version
 
 
 
+
+
 d) **Git:**
 
 **Download:** https://git-scm.com/
@@ -203,6 +221,8 @@ git --version
 ```
        
 ![image](https://github.com/user-attachments/assets/7f31563a-169a-42e9-a9c3-72e081c36521)
+
+
 
 
 
@@ -219,6 +239,9 @@ aws --version
 ![image](https://github.com/user-attachments/assets/6a8c4d20-760b-4b30-9014-9a10252b7514)
 
 
+
+
+
 e) **Terraform:**
 
 ```bash
@@ -233,6 +256,8 @@ terraform -v
 ```
 
 ![image](https://github.com/user-attachments/assets/7a9ccd85-147b-4793-9ef9-6994d0911ac0)
+
+
 
 
 
@@ -288,6 +313,8 @@ terraform init
 ![image](https://github.com/user-attachments/assets/9d4012ff-d432-456a-a911-6b98157bb7c2)
 
 
+
+
 ii) **View the Execution Plan**
 
 ```bash
@@ -296,7 +323,13 @@ terraform plan
 
 ![image](https://github.com/user-attachments/assets/775e9dbd-273c-4f23-9f1a-f7a2fdcfc67b)
 
+
+
+
 ![image](https://github.com/user-attachments/assets/4036cccf-7613-421d-9335-ed126bac22e3)
+
+
+
 
 
 iii) **Apply the Configuration**
@@ -307,11 +340,19 @@ terraform apply
 
 ![image](https://github.com/user-attachments/assets/fe870f9f-85fd-42ce-b446-660db2a0ca3d)
 
+
+
+
+
 ## Terraform Output
 
 **VPC:**
 
 ![image](https://github.com/user-attachments/assets/84fb19e9-b18c-4140-94b5-30e831a42a91)
+
+
+
+
 
 
 **Instances:**
@@ -321,14 +362,20 @@ terraform apply
 
 
 
+
+
 **Subnets:**
 
 ![image](https://github.com/user-attachments/assets/7ab72e0a-4c3e-4cba-a3d3-3ba845c6732d)
 
 
+
+
 **Internet-Gateway:**
 
 ![image](https://github.com/user-attachments/assets/48e07032-b92a-486c-943a-12f6de814cff)
+
+
 
 
 
@@ -338,9 +385,13 @@ terraform apply
 
 
 
+
+
 **Security Group:**
 
 ![image](https://github.com/user-attachments/assets/fac0919d-cb5c-446f-95b0-a5ff54624fd2)
+
+
 
 
 
@@ -352,9 +403,15 @@ terraform destroy
 ```
 
 ![image](https://github.com/user-attachments/assets/6ae62c5c-9caf-40af-a443-df2fac074ba4)
+
+
+
        
 
 ![image](https://github.com/user-attachments/assets/297e354b-d564-422e-843a-0d9e75378dd4)
+
+
+
 
 
 ## Dockerization of the Flask Application
@@ -372,11 +429,17 @@ git checkout -b feature/docker-setup
 ![image](https://github.com/user-attachments/assets/a1e5907f-170f-4fb4-b00b-c31c302bb02f)
 
 
+
+
+
 17. **Create  .dockerignore file**
     
 (This prevents unnecessary files from being copied into your Docker image)
 
 ![image](https://github.com/user-attachments/assets/3a119c8e-0696-4cb7-b5d5-a132276ba622)
+
+
+
 
 
 19. **Create a Dockerfile and requirements.txt files**
@@ -405,6 +468,8 @@ docker build -t interior-web-app:latest .
 
 ![image](https://github.com/user-attachments/assets/ce1ca7d3-3da7-4e92-86a1-eae056aa23d8)
 
+
+
     
 
 22. **List Docker Images:**
@@ -418,6 +483,8 @@ docker images
 
 
 
+
+
 23. **Run the container:**
       
 ```bash
@@ -428,6 +495,9 @@ docker run -itd -p 5000:5000 interior-web-app:latest
 ![image](https://github.com/user-attachments/assets/96fff6d3-d182-400e-996b-ac3b03bfef27)
 
 
+
+
+
 **Verify Running Containers:**
 
 ```bash
@@ -436,6 +506,8 @@ docker ps
 
 
 ![image](https://github.com/user-attachments/assets/3aff6893-d57c-4f59-9d11-3020c75617c5)
+
+
     
 
 
@@ -443,6 +515,8 @@ docker ps
 
 
 ![image](https://github.com/user-attachments/assets/4d4df858-8fb8-4bd2-926d-db706e609957)
+
+
 
 
 
@@ -458,10 +532,14 @@ docker push devopscode44/flask-app:v1
 
 
 
+
+
 25. **DockerHub Dashboard:**
 
 
 ![image](https://github.com/user-attachments/assets/790610e7-6c85-48d8-953d-96508a3d62a5)
+
+
 
     
 
@@ -475,6 +553,8 @@ docker rm Container-ID
 
 
 ![image](https://github.com/user-attachments/assets/8b51e210-1f8f-4815-ac93-b2e823457a3c)
+
+
 
 
 
@@ -498,6 +578,8 @@ git checkout -b feature/k8s-deployment
 
 
     ![image](https://github.com/user-attachments/assets/2ccf58eb-0c0e-42b2-bcf0-688dd3f24059)
+
+    
 
 
 
@@ -535,12 +617,17 @@ kubectl get deployment
 ![image](https://github.com/user-attachments/assets/41268d85-a168-41da-be5a-c339d19d919c)
 
 
+
+
+
 ```bash
 kubectl get svc
 ```
 
 
 ![image](https://github.com/user-attachments/assets/4fc928f0-cef7-471c-8a1e-9370b16f9551)
+
+
 
 
 
@@ -553,6 +640,8 @@ kubectl get configmap
 
 
 
+
+
 5) **Accessing the Flask App**
 
 ```bash
@@ -561,6 +650,8 @@ minikube service flask-service
 
 
 ![image](https://github.com/user-attachments/assets/95616fa7-07b3-43c1-874e-23ba176bea45)
+
+
 
 
 
